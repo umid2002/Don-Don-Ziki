@@ -1,0 +1,11 @@
+ *, *::after, *::before{
+     box-sizing: border-box;
+}
+@mixin wolf{
+    color: $color;
+    background-color: $color;
+}
+
+.container{
+    @include wolf(red)
+}
